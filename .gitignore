@@ -21,7 +21,12 @@ reference/*session*
 __pycache__/
 *.pyc
 .venv/
+build/
+dist/
+*.egg-info/
 
-# Transient captured token (local test only)
+# Transient captured tokens/session material (local only).
+# NOT: '.secrets/' kalibi '.secrets.bak.<epoch>' gibi yedekleri KAPSAMAZ — glob sart.
 .secrets/
+.secrets*
 *.local
