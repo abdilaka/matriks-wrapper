@@ -1,0 +1,372 @@
+syntax = "proto3";
+
+package mxroot.messages;
+
+message ComputedValuesMessage {
+  string symbol = 1;
+  string updateDate = 2;
+  string optionClass = 3;
+  double strikePrice = 4;
+  double impliedVolatility = 5;
+  double instrinsicValue = 6;
+  double timeValue = 7;
+  double leverage = 8;
+  double delta = 9;
+  double gamma = 10;
+  double theta = 11;
+  double vega = 12;
+  double rho = 13;
+  double breakEven = 14;
+  double omega = 15;
+  double sensitivity = 16;
+}
+
+message DepthStatsMessage {
+  int64 timestamp = 1;
+  double totalBidWAvg = 2;
+  double totalAskWAvg = 3;
+  double totalBidQuantity = 4;
+  double totalAskQuantity = 5;
+}
+
+message DepthTableMessage {
+  string symbol = 1;
+  string dateSymbol = 2;
+  int64 timestamp = 3;
+  repeated DepthCell asks = 4;
+  repeated DepthCell bids = 5;
+  int32 action = 6;
+  int32 bidAsk = 7;
+  int32 row = 8;
+}
+
+message DerivativeMessage {
+  sint32 symbolId = 1;
+  string symbolCode = 2;
+  string symbolDesc = 3;
+  string updateDate = 4;
+  double bid = 5;
+  double ask = 6;
+  double low = 7;
+  double high = 8;
+  double last = 9;
+  double dayClose = 10;
+  int32 fractionCount = 11;
+  double strikePrice = 12;
+  string maturity = 13;
+  string underlying = 14;
+  int32 optionClass = 15;
+  double dailyLow = 16;
+  double dailyHigh = 17;
+  double quantity = 18;
+  double volume = 19;
+  double difference = 20;
+  double differencePercent = 21;
+  double sevenDaysDifPer = 22;
+  double thirtyDaysDifPer = 23;
+  double fiftytwoWeekDifPer = 24;
+  double monthHigh = 25;
+  double monthLow = 26;
+  double yearHigh = 27;
+  double yearLow = 28;
+  double priceMean = 29;
+  double limitUp = 30;
+  double limitDown = 31;
+  double settlement = 32;
+  double settlementPerDif = 33;
+  int64 openInterest = 34;
+  double theoricalPrice = 35;
+  double theoricelPDifPer = 36;
+  double dailyVolume = 37;
+  double priceStep = 38;
+  bool openForTrade = 39;
+  string tradeDate = 40;
+  double open = 41;
+  double dailyQuantity = 42;
+  string actionType = 43;
+  int32 brutSwap = 44;
+  double totalTradeCount = 45;
+  double lastQuantity = 46;
+  double openInterestChange = 47;
+  double weekLow = 48;
+  double weekHigh = 49;
+  double weekClose = 50;
+  double monthClose = 51;
+  double yearClose = 52;
+  double preSettlement = 53;
+  int64 askSize = 54;
+  int64 bidSize = 55;
+  double rate = 56;
+  string marketMaker = 57;
+  double marketMakerAsk = 58;
+  double marketMakerBid = 59;
+  double prevYearClose = 60;
+  string riskLevel = 61;
+  double marketMakerAskClose = 62;
+  double marketMakerBidClose = 63;
+  double weekPriceMean = 64;
+  double monthPriceMean = 65;
+  double yearPriceMean = 66;
+  double incrementalQuantity = 67;
+  int32 publishReason = 68;
+  int32 stockStatus = 69;
+  double eqPrice = 70;
+  double eqQuantity = 71;
+  double eqRemainingBidQuantity = 72;
+  double eqRemainingAskQuantity = 73;
+  double initialMargin = 74;
+  double fiveYearClose = 75;
+  double sixMonthClose = 76;
+  double threeMonthClose = 77;
+  double nineMonthClose = 78;
+}
+
+message EventMessage {
+  int64 id = 1;
+  repeated string symbol = 2;
+  string category = 3;
+  string content = 4;
+}
+
+message FundratioMessage {
+  string symbol = 1;
+  double emkfon = 2;
+  double yatfon = 3;
+  int64 timestamp = 4;
+}
+
+message MessengerMessage {
+  string code = 1;
+  string from = 2;
+  int64 timestamp = 3;
+  string contentType = 4;
+  string subject = 5;
+  string content = 6;
+}
+
+message MetaMessage {
+  sint32 symbolId = 1;
+  string symbolCode = 2;
+  bool deleted = 3;
+  int64 modifiedAt = 4;
+  string description = 5;
+  int32 sectorId = 6;
+  string sectorCode = 7;
+  int32 exchangeId = 8;
+  string exchangeCode = 9;
+  string marketCode = 10;
+  string submarketCode = 11;
+  int32 fraction = 12;
+  int32 tradeFraction = 13;
+  repeated string indexes = 14;
+  string underlying = 15;
+  string optionType = 16;
+  string maturity = 17;
+  string optionClass = 18;
+  double strikePrice = 19;
+  string contractGroupName = 20;
+  string contractGroupId = 21;
+  double multiplier = 22;
+  string settlementType = 23;
+  string preSettlementCode = 24;
+  int32 cloneId = 25;
+  string issuer = 26;
+  string openingDate = 27;
+  string symbolGroup = 28;
+  string symbolType = 29;
+  string stockSymbolCode = 30;
+  int32 marketId = 31;
+  int32 tradeStatus = 32;
+  int32 tradeableStatus = 33;
+  int32 submarketId = 34;
+  bool isProxy = 35;
+  string marketMaker = 36;
+  double ratio = 37;
+  int32 fxSymbolId = 38;
+  string actionType = 39;
+  string swapType = 40;
+}
+
+message NewsMessage {
+  string id = 1;
+  bool isFlash = 2;
+  bool deleted = 3;
+  int64 timestamp = 4;
+  string headline = 5;
+  string content = 6;
+  repeated string source = 7;
+  repeated string category = 8;
+  repeated string symbol = 9;
+  string language = 10;
+  repeated string attachment = 11;
+  string dailyNewsNo = 12;
+  string chainId = 13;
+  repeated RelatedNews relatedNews = 14;
+  repeated string tag = 15;
+  AiAnalysis aiAnalysis = 16;
+}
+
+message PgcMessage {
+  int64 timestamp = 1;
+  double pgc5 = 2;
+  double pgc8 = 3;
+  double pgc10 = 4;
+  string symbol = 5;
+}
+
+message RankedSymbolsMessage {
+  repeated Line lines = 1;
+  repeated string field = 2;
+}
+
+message RankerMessage {
+  repeated Symbol symbols = 1;
+}
+
+message RatingScoreMessage {
+  string symbol = 1;
+  double generalScore = 2;
+  double sectoralScore = 3;
+  double valuationScore = 4;
+  double growthScore = 5;
+  double profitScore = 6;
+  double finScore = 7;
+  int64 timestamp = 8;
+}
+
+message SessionMessage {
+  int32 date = 1;
+  int32 firstSessionStart = 2;
+  int32 firstSessionEnd = 3;
+  int32 secondSessionStart = 4;
+  int32 secondSessionEnd = 5;
+  int32 exchangeId = 6;
+  int32 marketId = 7;
+}
+
+message SymbolMessage {
+  sint32 symbolId = 1;
+  string symbolCode = 2;
+  string symbolDesc = 3;
+  string updateDate = 4;
+  double bid = 5;
+  double ask = 6;
+  double low = 7;
+  double high = 8;
+  double last = 9;
+  double dayClose = 10;
+  int32 fractionCount = 11;
+  double dailyLow = 12;
+  double dailyHigh = 13;
+  double quantity = 14;
+  double volume = 15;
+  double difference = 16;
+  double differencePercent = 17;
+  double days7DifPer = 18;
+  double days30DifPer = 19;
+  double week52DifPer = 20;
+  double monthHigh = 21;
+  double monthLow = 22;
+  double yearHigh = 23;
+  double yearLow = 24;
+  double priceMean = 25;
+  double limitUp = 26;
+  double limitDown = 27;
+  double netProceeds = 28;
+  double priceProceeds = 29;
+  double marketValue = 30;
+  double marketValueUsd = 31;
+  double marValBookVal = 32;
+  double equity = 33;
+  double capital = 34;
+  double circulationShare = 35;
+  double circulationSharePer = 36;
+  string symbolGroup = 37;
+  double dailyVolume = 38;
+  bool sessionIsOpen = 39;
+  bool openForTrade = 40;
+  double priceStep = 41;
+  double basePrice = 42;
+  string symbolType = 43;
+  int32 tradeFraction = 44;
+  string stockSymbolCode = 45;
+  string tradeDate = 46;
+  double open = 47;
+  double dailyQuantity = 48;
+  string actionType = 49;
+  int32 brutSwap = 50;
+  double totalTradeCount = 51;
+  double lastQuantity = 52;
+  double weekLow = 53;
+  double weekHigh = 54;
+  double weekClose = 55;
+  double monthClose = 56;
+  double yearClose = 57;
+  string period = 58;
+  double shiftedNetProceed = 59;
+  int64 askSize = 60;
+  int64 bidSize = 61;
+  double eqPrice = 62;
+  double eqQuantity = 63;
+  double eqRemainingBidQuantity = 64;
+  double eqRemainingAskQuantity = 65;
+  double prevYearClose = 66;
+  int32 direction = 67;
+  double weekPriceMean = 68;
+  double monthPriceMean = 69;
+  double yearPriceMean = 70;
+  double beta100 = 71;
+  double cashNetDividend = 72;
+  double dividendYield = 73;
+  int32 stockStatus = 74;
+  double incrementalQuantity = 75;
+  int32 publishReason = 76;
+  double xu030Weight = 77;
+  double xu050Weight = 78;
+  double xu100Weight = 79;
+  double netDebt = 80;
+  double shiftedEbitda = 81;
+  double fiveYearClose = 82;
+  double sixMonthClose = 83;
+  double threeMonthClose = 84;
+  double nineMonthClose = 85;
+}
+
+message TimeMessage {
+  int64 timestamp = 1;
+}
+
+message TopOfTheBookMessage {
+  string symbol = 1;
+  repeated Order asks = 2;
+  repeated Order bids = 3;
+  int32 action = 4;
+  int32 bidAsk = 5;
+  int32 affectedRow = 6;
+}
+
+message TradeDateMessage {
+  string symbol = 1;
+  string tradedate = 2;
+  int64 timestamp = 3;
+}
+
+message TradeMessage {
+  string symbol = 1;
+  string orderNo = 2;
+  float price = 3;
+  int64 quantity = 4;
+  string activeBidOrAsk = 5;
+  int64 timestamp = 6;
+  string buyer = 7;
+  string seller = 8;
+}
+
+// --- Referenced nested types not yet field-extracted (stubs to keep proto valid).
+// TODO: extract real fields from worker if these payloads are needed.
+message AiAnalysis {}
+message DepthCell {}
+message Line {}
+message Order {}
+message RelatedNews {}
+message Symbol {}

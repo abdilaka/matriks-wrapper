@@ -1,0 +1,365 @@
+{
+  "mx/timestamp": {
+    "model": "mqtt",
+    "url": "wss://rtank.radix.matriksdata.com:443/market",
+    "topic": "mx/timestamp",
+    "payload": {
+      "timestamp": 1781394569000000
+    }
+  },
+  "mx/symbol@lvl2": {
+    "model": "mqtt",
+    "url": "wss://rtank.radix.matriksdata.com:443/market",
+    "topic": "mx/symbol/XU100@lvl2",
+    "payload": {
+      "symbolId": 642,
+      "symbolCode": "XU100",
+      "updateDate": "2026-06-12T18:10:11.000+03",
+      "low": 13801.34,
+      "high": 14125.84,
+      "last": 13938.48,
+      "dayClose": 13743.5,
+      "dailyLow": 13801.34,
+      "dailyHigh": 14125.84,
+      "quantity": 9534079304,
+      "volume": 229285837544.45,
+      "monthHigh": 14762.5,
+      "monthLow": 12966.26,
+      "yearHigh": 15204.92,
+      "yearLow": 9065.17,
+      "priceMean": 0,
+      "limitUp": 0,
+      "limitDown": 0,
+      "equity": 0,
+      "dailyVolume": 229285837544.45,
+      "priceStep": 0,
+      "tradeDate": "12/06/26",
+      "open": 13912.07,
+      "dailyQuantity": 9534079304,
+      "lastQuantity": 1341,
+      "weekLow": 13567.35,
+      "weekHigh": 14125.84,
+      "weekClose": 13694.19,
+      "monthClose": 14598.47,
+      "yearClose": 9520.22,
+      "eqPrice": 0,
+      "eqQuantity": 0,
+      "eqRemainingBidQuantity": 0,
+      "eqRemainingAskQuantity": 0,
+      "prevYearClose": 11261.52,
+      "weekPriceMean": 17.968092781110585,
+      "monthPriceMean": 18.832940440898398,
+      "yearPriceMean": 20.43161096039438,
+      "beta100": 0,
+      "cashNetDividend": 188556404563.6655,
+      "dividendYield": 1.406,
+      "netDebt": 0,
+      "shiftedEbitda": 0,
+      "fiveYearClose": 1460.86,
+      "sixMonthClose": 11311.31,
+      "threeMonthClose": 13092.93,
+      "nineMonthClose": 10372.04
+    }
+  },
+  "mx/symbol": {
+    "model": "mqtt",
+    "url": "wss://rtank.radix.matriksdata.com:443/market",
+    "topic": "mx/symbol/ARCLK",
+    "payload": {
+      "symbolId": 44,
+      "symbolCode": "ARCLK",
+      "updateDate": "2026-06-12T18:09:41.000+03",
+      "bid": 102.9,
+      "ask": 103,
+      "low": 101.3,
+      "high": 104.7,
+      "last": 102.9,
+      "dayClose": 101.5,
+      "dailyLow": 101.3,
+      "dailyHigh": 104.7,
+      "monthHigh": 114.9,
+      "monthLow": 100.4,
+      "yearHigh": 147.5,
+      "yearLow": 99.65,
+      "limitUp": 113.1,
+      "limitDown": 92.65,
+      "netProceeds": -1816779010,
+      "equity": 73314458000,
+      "capital": 675728205,
+      "circulationShare": 118720726.12,
+      "circulationSharePer": 17.56,
+      "priceStep": 0.1,
+      "basePrice": 102.9,
+      "tradeDate": "12/06/26",
+      "open": 103.1,
+      "actionType": "S",
+      "brutSwap": 0,
+      "weekLow": 101,
+      "weekHigh": 104.7,
+      "weekClose": 103.3,
+      "monthClose": 113.4,
+      "yearClose": 109.9,
+      "period": "26-03",
+      "shiftedNetProceed": -8865102,
+      "prevYearClose": 101,
+      "weekPriceMean": 102.53137276802909,
+      "monthPriceMean": 105.38367830089898,
+      "yearPriceMean": 116.88033443377321,
+      "beta100": 0.9465318,
+      "cashNetDividend": 0,
+      "stockStatus": 26,
+      "netDebt": 169781109000,
+      "shiftedEbitda": 33540660758.63,
+      "fiveYearClose": 29.983288,
+      "sixMonthClose": 109.3,
+      "threeMonthClose": 111.8,
+      "nineMonthClose": 123.4
+    }
+  },
+  "mx/symbol@vq": {
+    "model": "mqtt",
+    "url": "wss://dlank.radix.matriksdata.com:443/market",
+    "topic": "mx/symbol/ARCLK@vq",
+    "payload": {
+      "symbolId": 44,
+      "symbolCode": "ARCLK",
+      "quantity": 1605243,
+      "volume": 166048481.2,
+      "priceMean": 103.441,
+      "dailyVolume": 166048481.2,
+      "dailyQuantity": 1605243,
+      "eqPrice": 102.9,
+      "eqQuantity": 43415,
+      "eqRemainingBidQuantity": 4777,
+      "eqRemainingAskQuantity": 0
+    }
+  },
+  "mx/derivative": {
+    "model": "mqtt",
+    "url": "wss://rtank.radix.matriksdata.com:443/market",
+    "topic": "mx/derivative/X30YVADE",
+    "payload": {
+      "symbolId": 1614,
+      "symbolCode": "X30YVADE",
+      "updateDate": "2026-06-12T22:59:58.000+03",
+      "bid": 16090,
+      "ask": 16093,
+      "low": 15783,
+      "high": 16337,
+      "last": 16090,
+      "dayClose": 15724,
+      "dailyLow": 15783,
+      "dailyHigh": 16337,
+      "monthHigh": 17398,
+      "monthLow": 14359,
+      "yearHigh": 18219,
+      "yearLow": 10133,
+      "limitUp": 16509,
+      "limitDown": 15549,
+      "settlement": 16029,
+      "theoricalPrice": 16213.067,
+      "priceStep": 1,
+      "openForTrade": true,
+      "tradeDate": "12/06/26",
+      "open": 15995,
+      "weekLow": 15355,
+      "weekHigh": 16118,
+      "weekClose": 15494,
+      "monthClose": 17300,
+      "yearClose": 10672,
+      "preSettlement": 15724,
+      "marketMaker": "UNDEFINED",
+      "marketMakerAsk": 0,
+      "marketMakerBid": 0,
+      "prevYearClose": 11125,
+      "weekPriceMean": 15733.634964464887,
+      "monthPriceMean": 16046.309281876232,
+      "yearPriceMean": 14920.862596876603,
+      "stockStatus": 1,
+      "initialMargin": 19074.51,
+      "fiveYearClose": 1577.75,
+      "sixMonthClose": 11125,
+      "threeMonthClose": 16030,
+      "nineMonthClose": 11125
+    }
+  },
+  "mx/derivative@vq": {
+    "model": "mqtt",
+    "url": "wss://dlank.radix.matriksdata.com:443/market",
+    "topic": "mx/derivative/X30YVADE@vq",
+    "payload": {
+      "symbolId": 1614,
+      "symbolCode": "X30YVADE",
+      "quantity": 372719,
+      "volume": 59932818370,
+      "priceMean": 16079.888059288633,
+      "openInterest": 481990,
+      "dailyVolume": 59932818370,
+      "dailyQuantity": 372719,
+      "openInterestChange": -12304,
+      "eqPrice": 15995,
+      "eqQuantity": 203,
+      "eqRemainingBidQuantity": 10,
+      "eqRemainingAskQuantity": 0
+    }
+  },
+  "mx/stats": {
+    "model": "mqtt",
+    "url": "wss://rtank.radix.matriksdata.com/stats",
+    "topic": "mx/stats/high",
+    "payload": {
+      "symbols": [
+        {
+          "key": "ARMGD",
+          "value": 10.000000000000009,
+          "last": 146.3,
+          "priceChange": 10.000000000000009
+        },
+        {
+          "key": "BRKO",
+          "value": 10,
+          "last": 13.75,
+          "priceChange": 10
+        },
+        {
+          "key": "CEMAS",
+          "value": 10.000000000000004,
+          "last": 4.95,
+          "priceChange": 10.000000000000004
+        },
+        {
+          "key": "ENERY",
+          "value": 10.000000000000014,
+          "last": 9.46,
+          "priceChange": 10.000000000000014
+        },
+        {
+          "key": "SANFM",
+          "value": 10.000000000000007,
+          "last": 10.67,
+          "priceChange": 10.000000000000007
+        },
+        {
+          "key": "SMRVA",
+          "value": 9.992862241256248,
+          "last": 15.41,
+          "priceChange": 9.992862241256248
+        },
+        {
+          "key": "PKART",
+          "value": 9.991460290350144,
+          "last": 128.8,
+          "priceChange": 9.991460290350144
+        },
+        {
+          "key": "PRZMA",
+          "value": 9.986257443884579,
+          "last": 48.02,
+          "priceChange": 9.986257443884579
+        },
+        {
+          "key": "GZNMI",
+          "value": 9.984025559105419,
+          "last": 68.85,
+          "priceChange": 9.984025559105419
+        },
+        {
+          "key": "FRMPL",
+          "value": 9.975550122249386,
+          "last": 44.98,
+          "priceChange": 9.975550122249386
+        },
+        {
+          "key": "SAYAS",
+          "value": 9.96093749999999,
+          "last": 56.3,
+          "priceChange": 9.96093749999999
+        },
+        {
+          "key": "BIGEN",
+          "value": 9.959349593495931,
+          "last": 54.1,
+          "priceChange": 9.959349593495931
+        },
+        {
+          "key": "VBTYZ",
+          "value": 9.959072305593457,
+          "last": 32.24,
+          "priceChange": 9.959072305593457
+        },
+        {
+          "key": "EDATA",
+          "value": 9.952606635071088,
+          "last": 18.56,
+          "priceChange": 9.952606635071088
+        },
+        {
+          "key": "KFEIN",
+          "value": 9.909909909909912,
+          "last": 10.98,
+          "priceChange": 9.909909909909912
+        },
+        {
+          "key": "MTRKS",
+          "value": 9.872849663425583,
+          "last": 29.38,
+          "priceChange": 9.872849663425583
+        },
+        {
+          "key": "ICUGS",
+          "value": 9.850107066381156,
+          "last": 5.13,
+          "priceChange": 9.850107066381156
+        },
+        {
+          "key": "KAPLM",
+          "value": 9.7682119205298,
+          "last": 663,
+          "priceChange": 9.7682119205298
+        },
+        {
+          "key": "ALKLC",
+          "value": 9.433962264150944,
+          "last": 348,
+          "priceChange": 9.433962264150944
+        },
+        {
+          "key": "MEPET",
+          "value": 9.391435011269722,
+          "last": 29.12,
+          "priceChange": 9.391435011269722
+        },
+        {
+          "key": "OTTO",
+          "value": 9.013944223107567,
+          "last": 218.9,
+          "priceChange": 9.013944223107567
+        },
+        {
+          "key": "YKBNK",
+          "value": 8.794974300399765,
+          "last": 38.1,
+          "priceChange": 8.794974300399765
+        },
+        {
+          "key": "AKBNK",
+          "value": 8.682634730538918,
+          "last": 72.6,
+          "priceChange": 8.682634730538918
+        },
+        {
+          "key": "ALBRK",
+          "value": 8.614232209737823,
+          "last": 8.7,
+          "priceChange": 8.614232209737823
+        },
+        {
+          "key": "GRTHO",
+          "value": 8.61423220973783,
+          "last": 232,
+          "priceChange": 8.61423220973783
+        }
+      ]
+    }
+  }
+}

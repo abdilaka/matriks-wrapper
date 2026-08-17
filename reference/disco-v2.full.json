@@ -1,0 +1,3768 @@
+{
+  "rest": {
+    "arf": {
+      "insertRule": {
+        "url": "https://api.matriksdata.com/dumrul/v1/arf/rule",
+        "method": "post",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "updateRule": {
+        "url": "https://api.matriksdata.com/dumrul/v1/arf/rule",
+        "method": "put",
+        "parameters": [
+          "active",
+          "id"
+        ],
+        "gzAvailable": false
+      },
+      "getAllRules": {
+        "url": "https://api.matriksdata.com/dumrul/v1/arf/rules",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "getRule": {
+        "url": "https://api.matriksdata.com/dumrul/v1/arf/rule",
+        "parameters": [
+          "id"
+        ],
+        "gzAvailable": false
+      },
+      "deleteRule": {
+        "url": "https://api.matriksdata.com/dumrul/v1/arf/rule",
+        "method": "delete",
+        "parameters": [
+          "id"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "arf_v2": {
+      "insertRule": {
+        "url": "https://api.matriksdata.com/dumrul/v2/arf/rule",
+        "method": "post",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "updateRule": {
+        "url": "https://api.matriksdata.com/dumrul/v2/arf/rule",
+        "method": "put",
+        "parameters": [
+          "active",
+          "id"
+        ],
+        "gzAvailable": false
+      },
+      "getAllRules": {
+        "url": "https://api.matriksdata.com/dumrul/v2/arf/rules",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "getRule": {
+        "url": "https://api.matriksdata.com/dumrul/v2/arf/rule",
+        "parameters": [
+          "id"
+        ],
+        "gzAvailable": false
+      },
+      "deleteRule": {
+        "url": "https://api.matriksdata.com/dumrul/v2/arf/rule",
+        "method": "delete",
+        "parameters": [
+          "id"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "historicTick": {
+      "depth": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/depth",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      },
+      "settlement": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/settlement",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      },
+      "totalsize": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/totalsize",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      },
+      "trade": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/trade",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      },
+      "tradebs": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/trade_bs",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "tradeex": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/trade_ex",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "bestbidoffer": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/bestbidoffer",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      },
+      "barCsv": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/bar.csv",
+        "parameters": [
+          "symbol",
+          "period",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "openinterest": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/openinterest",
+        "parameters": [
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": true
+      }
+    },
+    "wealth": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/wealth",
+      "parameters": [
+        "symbol",
+        "fund",
+        "amount",
+        "period",
+        "start",
+        "end",
+        "excludeDefaults"
+      ],
+      "gzAvailable": false
+    },
+    "historicWealth": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/historic-wealth",
+      "parameters": [
+        "symbols",
+        "divide",
+        "amount",
+        "period",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "lntrade": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/lntrade",
+      "parameters": [
+        "symbol",
+        "count"
+      ],
+      "gzAvailable": true
+    },
+    "news": {
+      "search": {
+        "url": "https://apiank.matriksdata.com/dumrul/v2/news/search",
+        "parameters": [
+          "query",
+          "language",
+          "count",
+          "withComment"
+        ],
+        "gzAvailable": false
+      },
+      "page": {
+        "url": "https://apiank.matriksdata.com/dumrul/v2/news/search/page",
+        "parameters": [
+          "content",
+          "page",
+          "pageSize",
+          "qid"
+        ],
+        "gzAvailable": true
+      },
+      "id": {
+        "url": "https://apiank.matriksdata.com/dumrul/v2/news",
+        "parameters": [
+          "id",
+          "fields"
+        ],
+        "gzAvailable": true
+      },
+      "meta": {
+        "url": "https://apiank.matriksdata.com/news-meta.json",
+        "parameters": [],
+        "gzAvailable": false,
+        "lastUpdate": 1610396666
+      },
+      "lastNNews": {
+        "url": "https://apiank.matriksdata.com/dumrul/v2/news/lastN",
+        "parameters": [
+          "count",
+          "fields"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "marketSymbolList": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/market-symbol-list",
+      "parameters": [
+        "inline"
+      ],
+      "gzAvailable": false
+    },
+    "turibMarketSymbolList": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/turib-elus-market-symbol-list",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "brokerTradingVolume": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/broker-trading-volume/stock",
+      "gzAvailable": false,
+      "parameters": [
+        "top",
+        "date",
+        "calculationFor",
+        "symbolList"
+      ]
+    },
+    "brokerViopTradingVolume": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/broker-trading-volume/future",
+      "gzAvailable": false,
+      "parameters": [
+        "top",
+        "date",
+        "calculationFor",
+        "submarketCode"
+      ]
+    },
+    "brokerOptionTradingVolume": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/broker-trading-volume/option",
+      "gzAvailable": false,
+      "parameters": [
+        "top",
+        "date",
+        "calculationFor",
+        "submarketCode"
+      ]
+    },
+    "tradeDistribution": {
+      "broker": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/trade-distribution/brokers",
+        "parameters": [
+          "symbolType",
+          "start",
+          "end",
+          "top",
+          "startSeconds",
+          "endSeconds",
+          "dividend"
+        ],
+        "gzAvailable": false
+      },
+      "equity": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/trade-distribution/equities",
+        "parameters": [
+          "symbolType",
+          "start",
+          "end",
+          "startSeconds",
+          "endSeconds",
+          "top",
+          "agent"
+        ],
+        "gzAvailable": false
+      },
+      "singleequity": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/trade-distribution/equity",
+        "parameters": [
+          "top",
+          "symbol"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "metaData": {
+      "symbols": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/symbols",
+        "parameters": [
+          "marketCode",
+          "exchangeId",
+          "symbolType",
+          "sectorId",
+          "submarketCode",
+          "marketId",
+          "modifiedAt",
+          "deleted",
+          "allSymbols",
+          "symbolCode"
+        ],
+        "gzAvailable": true
+      },
+      "turibMarkets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/markets/turib",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "viopMarkets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/markets/viop",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "markets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/markets",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "members": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/members",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1781169241
+      },
+      "exchanges": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/exchanges",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1641133715
+      },
+      "sectors": {
+        "url": "https://apiank.matriksdata.com/dumrul/v3/meta/sectors",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "sessionHours": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/session-hours",
+        "parameters": [
+          "date"
+        ],
+        "gzAvailable": false
+      },
+      "dayCounter": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/meta/day-counter",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "type",
+          "period"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "metaDataV4": {
+      "symbols": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/symbols",
+        "parameters": [
+          "marketCode",
+          "exchangeId",
+          "symbolType",
+          "sectorId",
+          "submarketCode",
+          "marketId",
+          "modifiedAt",
+          "deleted",
+          "allSymbols",
+          "symbolCode"
+        ],
+        "gzAvailable": true
+      },
+      "turibMarkets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/markets/turib",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "viopMarkets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/markets/viop",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "markets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/markets",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "members": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/members",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1781169241
+      },
+      "exchanges": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/exchanges",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1641133715
+      },
+      "sectors": {
+        "url": "https://apiank.matriksdata.com/dumrul/v4/meta/sectors",
+        "parameters": [],
+        "gzAvailable": true,
+        "lastUpdate": 1610396666
+      },
+      "sessionHours": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/session-hours",
+        "parameters": [
+          "date"
+        ],
+        "gzAvailable": false
+      },
+      "dayCounter": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/meta/day-counter",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "type",
+          "period"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "metaForeign": {
+      "symbols": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/meta-foreign/symbols",
+        "parameters": [
+          "deleted",
+          "symbolType",
+          "exchangeId"
+        ],
+        "gzAvailable": true
+      },
+      "exchanges": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/meta-foreign/exchanges",
+        "parameters": [],
+        "gzAvailable": true
+      }
+    },
+    "snapshotForeignMarket": {
+      "iex": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/snapshot-foreign-market/iex",
+        "parameters": [
+          "symbols",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      },
+      "nbbo": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/snapshot-foreign-market/nbbo",
+        "parameters": [
+          "symbols",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "barForeign": {
+      "iex": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-bar/iex",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "period",
+          "count",
+          "timestamp",
+          "divide"
+        ],
+        "gzAvailable": false
+      },
+      "nbbo": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-bar/nbbo",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "period",
+          "count",
+          "timestamp",
+          "divide"
+        ],
+        "gzAvailable": false
+      },
+      "chart": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-bar/chart",
+        "parameters": [
+          "symbols"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "tradeForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-trade",
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "top"
+      ],
+      "gzAvailable": false
+    },
+    "companyCardsForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-company-cards",
+      "parameters": [
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "calendarForeign": {
+      "publicOfferings": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-calendar/public-offerings",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      },
+      "dividends": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-calendar/dividends",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      },
+      "splits": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-calendar/splits",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      },
+      "earnings": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-calendar/earnings",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "exchange",
+          "symbolType"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "ratingsForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-ratings",
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "exchange",
+        "symbolType"
+      ],
+      "gzAvailable": false
+    },
+    "priceTargetForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-price-target",
+      "parameters": [
+        "symbols",
+        "exchange",
+        "symbolType"
+      ],
+      "gzAvailable": false
+    },
+    "financialScoresForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-financial-scores",
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "exchange"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerForeign": {
+      "iex": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/iex",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      },
+      "iexEtf": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/iex/etf",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      },
+      "iexFund": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/iex/fund",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      },
+      "nbbo": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/nbbo",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      },
+      "nbboEtf": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/nbbo/etf",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      },
+      "nbboFund": {
+        "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-filter-ranker/nbbo/fund",
+        "parameters": [
+          "type",
+          "top",
+          "period",
+          "exchange"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "marketSymbolListForeign": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-market-symbol-list",
+      "parameters": [
+        "inline"
+      ],
+      "gzAvailable": false
+    },
+    "priceStep": {
+      "url": "https://apiank.matriksdata.com/price-step.json",
+      "parameters": [],
+      "gzAvailable": false,
+      "lastUpdate": 1699024800
+    },
+    "priceStepV2": {
+      "url": "https://apiank.matriksdata.com/price-step-v2.json",
+      "parameters": [],
+      "gzAvailable": false,
+      "lastUpdate": 1732895108
+    },
+    "sessionHourStatic": {
+      "url": "https://apiank.matriksdata.com/session-hours.json",
+      "parameters": [],
+      "gzAvailable": false,
+      "lastUpdate": 1611653037
+    },
+    "topach": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/topach",
+      "parameters": [],
+      "gzAvailable": true
+    },
+    "akd": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/akd",
+      "parameters": [
+        "start",
+        "end",
+        "top",
+        "symbol"
+      ],
+      "gzAvailable": true
+    },
+    "tpd": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/tpd",
+      "parameters": [
+        "start",
+        "end",
+        "symbol"
+      ],
+      "gzAvailable": true
+    },
+    "agentAssets": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-assets",
+      "parameters": [
+        "date",
+        "agent",
+        "symbol",
+        "dividend",
+        "symbols",
+        "agents",
+        "top"
+      ],
+      "gzAvailable": true
+    },
+    "agentAssetsList": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-assets-list",
+      "parameters": [
+        "date",
+        "top"
+      ],
+      "gzAvailable": false
+    },
+    "bar": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/tick/bar",
+      "parameters": [
+        "symbol",
+        "period",
+        "start",
+        "end",
+        "divisorSymbol",
+        "count",
+        "timestamp",
+        "useFraction",
+        "divide",
+        "startTimestamp",
+        "endTimestamp",
+        "midTimestamp"
+      ],
+      "gzAvailable": true
+    },
+    "holidays": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/holidays",
+      "parameters": [
+        "startdate",
+        "enddate",
+        "halfday"
+      ],
+      "gzAvailable": false
+    },
+    "foreignassets": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/foreign-assets",
+      "parameters": [
+        "agents"
+      ],
+      "gzAvailable": false
+    },
+    "foreignAssetsChange": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/foreign-assets-change",
+      "parameters": [
+        "agents",
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "trendingForeignAssets": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/trending-foreign-assets",
+      "parameters": [
+        "agents",
+        "type"
+      ],
+      "gzAvailable": false
+    },
+    "agentWeeklyForeignPercent": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-weekly-foreign-percent",
+      "parameters": [
+        "agents"
+      ],
+      "gzAvailable": false
+    },
+    "portfolioOptimizer": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/portfolio-optimizer",
+      "parameters": [
+        "symbols",
+        "alpha",
+        "days"
+      ],
+      "gzAvailable": false
+    },
+    "warrantCoach": {
+      "underlyings": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-coach/underlyings",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "warrants": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-coach/warrants",
+        "parameters": [
+          "underlyings",
+          "type",
+          "risk",
+          "issuers",
+          "daysToMaturity"
+        ],
+        "gzAvailable": false
+      },
+      "issuers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-coach/issuers",
+        "parameters": [],
+        "gzAvailable": false
+      }
+    },
+    "dividends": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/dividends",
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "warrantCalculator": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-calculator",
+      "parameters": [
+        "symbol",
+        "referenceDate",
+        "underlyingValue",
+        "volatility",
+        "interestRate",
+        "currency"
+      ],
+      "gzAvailable": false
+    },
+    "warrantPriceStep": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-calculator/price-step",
+      "parameters": [
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "warrantReport": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-report",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "warrantCompass": {
+      "underlyings": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-compass/underlyings",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "warrants": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-compass/warrants",
+        "parameters": [
+          "underlying"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "optionCalculator": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/option-calculator",
+      "parameters": [
+        "symbol",
+        "referenceDate",
+        "underlyingValue",
+        "volatility",
+        "interestRate",
+        "currency"
+      ],
+      "gzAvailable": false
+    },
+    "companyCards": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/company-cards",
+      "parameters": [
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "primeDashboard": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/prime-dashboard",
+      "parameters": [
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "akdByAgent": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/akd-by-agent",
+      "parameters": [
+        "agent",
+        "start",
+        "end",
+        "top",
+        "symbolType"
+      ],
+      "gzAvailable": false
+    },
+    "derivedBar": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/tick/derived-bar",
+      "parameters": [
+        "symbol",
+        "period",
+        "start",
+        "end",
+        "divisorSymbol",
+        "count",
+        "timestamp",
+        "useFraction",
+        "startTimestamp",
+        "endTimestamp"
+      ],
+      "gzAvailable": false
+    },
+    "dependency": {
+      "cor": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/dependency/cor",
+        "parameters": [
+          "symbols",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "highestcor": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/dependency/highestcor",
+        "parameters": [
+          "index",
+          "count"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "techAnalysis": {
+      "pivots": {
+        "url": "https://api.matriksdata.com/dumrul/v1/tech-analysis/pivots",
+        "parameters": [
+          "symbol",
+          "index",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "indPos": {
+        "url": "https://api.matriksdata.com/dumrul/v1/tech-analysis/ind-pos",
+        "parameters": [
+          "symbol",
+          "index"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "fundamentalsExpectedDates": {
+      "expectedDates": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals-expected-dates",
+        "parameters": [
+          "symbol",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "deadlines": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals-expected-dates/deadlines",
+        "parameters": [
+          "period"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "fundamentals": {
+      "periods": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/periods",
+        "parameters": [
+          "symbol",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "declarationDates": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/declaration-dates",
+        "parameters": [
+          "symbol",
+          "period",
+          "start",
+          "end",
+          "last"
+        ],
+        "gzAvailable": false
+      },
+      "BS": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/BS",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "CF": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/CF",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "INC": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/INC",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "BS_CSV": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/BS.csv",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "CF_CSV": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/CF.csv",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      },
+      "INC_CSV": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals/INC.csv",
+        "parameters": [
+          "symbols",
+          "periods",
+          "currency",
+          "lang",
+          "unadjusted"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "underlyingClassification": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/underlying-classification",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "indexWeight": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/index-weight",
+      "parameters": [
+        "symbol",
+        "index"
+      ],
+      "gzAvailable": false
+    },
+    "sectoralBrief": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/sectoral-brief",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "openInterestDist": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/open-interest-dist",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "fundamentalIndicators": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamentals-indicators",
+      "parameters": [
+        "symbols"
+      ],
+      "gzAvailable": false
+    },
+    "primeEvent": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/prime-event",
+      "parameters": [
+        "symbol",
+        "count",
+        "agent",
+        "typeId"
+      ],
+      "gzAvailable": false
+    },
+    "agentTrades": {
+      "daily": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/agenttrades/daily",
+        "parameters": [
+          "agent",
+          "timestamp"
+        ],
+        "gzAvailable": true
+      },
+      "historic": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/agenttrades/historic",
+        "parameters": [
+          "agent",
+          "date"
+        ],
+        "gzAvailable": true
+      }
+    },
+    "inflationRates": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/inflation-rates",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "agentAssetsIndicators": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-assets-indicators",
+      "parameters": [
+        "symbols",
+        "agents"
+      ],
+      "gzAvailable": false
+    },
+    "trendingVolume": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/trending-volume",
+      "parameters": [
+        "top",
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "currencyPosition": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/currency-position",
+      "parameters": [
+        "symbols"
+      ],
+      "gzAvailable": false
+    },
+    "listOfFundamentals": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/list-of-fundamentals",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "optionWarrantTree": {
+      "optionMeta": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-and-option-tree/options/meta",
+        "parameters": [
+          "symbol",
+          "index"
+        ],
+        "gzAvailable": false
+      },
+      "warrantMeta": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-and-option-tree/warrants/meta",
+        "parameters": [
+          "symbol",
+          "index"
+        ],
+        "gzAvailable": false
+      },
+      "options": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-and-option-tree/options",
+        "parameters": [
+          "underlying",
+          "maturity"
+        ],
+        "gzAvailable": false
+      },
+      "warrants": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/warrant-and-option-tree/warrants",
+        "parameters": [
+          "underlying",
+          "maturity",
+          "issuer"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "gainersLine": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/gainers-line",
+      "parameters": [
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "snapshotMarketReal": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/snapshot-market-real",
+      "parameters": [
+        "symbols"
+      ],
+      "gzAvailable": false
+    },
+    "snapshotMarketDelayed": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/snapshot-market-delayed",
+      "parameters": [
+        "symbols",
+        "exchangeId",
+        "symbolType",
+        "marketCode"
+      ],
+      "gzAvailable": false
+    },
+    "brokerTradingVolumeSummaryV2": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/broker-trading-volume-summary",
+      "parameters": [
+        "start",
+        "end",
+        "type"
+      ],
+      "gzAvailable": false
+    },
+    "brokerTradingVolumeSummaryIndicator": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/broker-trading-volume-summary/indicator",
+      "parameters": [
+        "start",
+        "end",
+        "type",
+        "agents"
+      ],
+      "gzAvailable": false
+    },
+    "capitalIncrease": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/capital-increase",
+      "parameters": [
+        "symbols",
+        "start",
+        "end",
+        "year",
+        "type"
+      ],
+      "gzAvailable": false
+    },
+    "lineChart": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/line-chart",
+      "parameters": [
+        "symbols"
+      ],
+      "gzAvailable": false
+    },
+    "initialMargin": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/initial-margin",
+      "parameters": [
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "initialMarginV2": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/initial-margin",
+      "parameters": [
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "funds": {
+      "meta": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/meta",
+        "parameters": [
+          "type",
+          "tradeableStatus",
+          "active",
+          "search"
+        ],
+        "gzAvailable": false
+      },
+      "price": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/price",
+        "parameters": [
+          "fund",
+          "date",
+          "company",
+          "kind",
+          "type",
+          "tradeableStatus",
+          "fundClass",
+          "active"
+        ],
+        "gzAvailable": false
+      },
+      "graph": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/graph",
+        "parameters": [
+          "fund",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "asset-distribution": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/asset-distribution",
+        "parameters": [
+          "fund",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "metaCompanies": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/meta/companies",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "gainers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/funds/gainers",
+        "parameters": [
+          "period",
+          "type",
+          "kind",
+          "top"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "fundsportfolio": {
+      "fundsportfolio": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundsportfolio",
+        "parameters": [
+          "fund",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "periods": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundsportfolio/periods",
+        "parameters": [
+          "fund",
+          "year"
+        ],
+        "gzAvailable": false
+      },
+      "assets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundsportfolio/assets",
+        "parameters": [
+          "symbol",
+          "period",
+          "startperiod",
+          "endperiod"
+        ],
+        "gzAvailable": false
+      },
+      "sectors": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundsportfolio/sectors",
+        "parameters": [
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "count": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/fundsportfolio/count",
+        "parameters": [
+          "top",
+          "period"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "depth": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/depth",
+      "parameters": [
+        "count",
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "widget": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/widget",
+      "parameters": [
+        "symbols"
+      ],
+      "gzAvailable": false
+    },
+    "agentAssetsIndicatorsHistoric": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-assets-indicators/historic",
+      "parameters": [
+        "symbol",
+        "agents",
+        "start",
+        "end",
+        "dividend"
+      ],
+      "gzAvailable": false
+    },
+    "fundsFlows": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/funds-flows",
+      "parameters": [
+        "fund",
+        "type",
+        "startperiod",
+        "endperiod",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "ratioAnalysis": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/ratio-analysis",
+      "parameters": [
+        "symbols",
+        "sectors"
+      ],
+      "gzAvailable": false
+    },
+    "deepTopAnalysis": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/deep-top-analysis",
+      "parameters": [
+        "days"
+      ],
+      "gzAvailable": false
+    },
+    "filterRanker": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker",
+      "parameters": [
+        "top",
+        "type",
+        "sectorCode",
+        "period",
+        "indexes"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerViop": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker/viop",
+      "parameters": [
+        "top",
+        "type",
+        "period",
+        "isProxy",
+        "assetType",
+        "submarketCode"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerOptions": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker/viop/options",
+      "parameters": [
+        "top",
+        "type",
+        "assetType",
+        "submarketCode"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerWarrants": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker/warrants",
+      "parameters": [
+        "top",
+        "type",
+        "assetType"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerCrypto": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker/crypto",
+      "parameters": [
+        "top",
+        "type",
+        "source",
+        "currency"
+      ],
+      "gzAvailable": false
+    },
+    "filterRankerCryptoList": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/filter-ranker/crypto-list",
+      "parameters": [
+        "top",
+        "type",
+        "source",
+        "currency"
+      ],
+      "gzAvailable": false
+    },
+    "publicOffering": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/public-offering",
+      "parameters": [
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "userLicenses": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/user-licenses",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "marketMakers": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/market-makers",
+      "parameters": [
+        "start",
+        "end",
+        "top"
+      ],
+      "gzAvailable": false
+    },
+    "twitter": {
+      "twitter": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/twitter",
+        "parameters": [
+          "symbol"
+        ],
+        "gzAvailable": false
+      },
+      "daily": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/twitter/daily",
+        "parameters": [
+          "symbol"
+        ],
+        "gzAvailable": false
+      },
+      "historic": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/twitter/historic",
+        "parameters": [
+          "start",
+          "end",
+          "symbol"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "flowAnalysis": {
+      "equities": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/flow-analysis/equities",
+        "parameters": [
+          "type",
+          "start",
+          "end",
+          "symbols",
+          "indexes"
+        ],
+        "gzAvailable": false
+      },
+      "stf": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/flow-analysis/stf",
+        "parameters": [
+          "agents",
+          "bidask",
+          "type",
+          "start",
+          "end",
+          "percent"
+        ],
+        "gzAvailable": false
+      },
+      "atf": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/flow-analysis/atf",
+        "parameters": [
+          "agents",
+          "bidask",
+          "type",
+          "period",
+          "percent"
+        ],
+        "gzAvailable": false
+      },
+      "dtv": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/flow-analysis/dtv",
+        "parameters": [
+          "index",
+          "symbol",
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "economicCalendar": {
+      "calendar": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/economic-calendar",
+        "parameters": [
+          "start",
+          "end",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "indicators": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/economic-calendar/indicators",
+        "parameters": [
+          "countryCode"
+        ],
+        "gzAvailable": false
+      },
+      "country": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/economic-calendar/countries",
+        "parameters": [],
+        "gzAvailable": false
+      }
+    },
+    "performanceAnalysis": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/performance-analysis",
+      "parameters": [
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "agentAssetsExplorer": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/agent-assets-explorer",
+      "parameters": [
+        "date",
+        "top",
+        "dividend",
+        "symbolType"
+      ],
+      "gzAvailable": true
+    },
+    "profitTable": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/profit-table",
+      "parameters": [
+        "period",
+        "top"
+      ],
+      "gzAvailable": false
+    },
+    "mtxCdnV2": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/mtx-cdn/images/:type/:name",
+      "gzAvailable": false,
+      "parameters": [
+        "type",
+        "name",
+        "png",
+        "size"
+      ]
+    },
+    "circulation": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/circulation",
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "registration": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/registration",
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "monthlyForeignTrades": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/monthly-foreign-trades",
+      "parameters": [
+        "symbol",
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "investor": {
+      "investor": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/investor",
+        "parameters": [
+          "symbol",
+          "date",
+          "dividend"
+        ],
+        "gzAvailable": false
+      },
+      "historic": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/investor/historic",
+        "parameters": [
+          "symbol",
+          "start",
+          "end",
+          "dividend"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "securitiesPrecautionList": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/securities-precaution-list",
+      "parameters": [],
+      "gzAvailable": false
+    },
+    "fundPeriodicReturn": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fund-periodic-return",
+      "parameters": [
+        "fund",
+        "kind",
+        "period",
+        "relative"
+      ],
+      "gzAvailable": false
+    },
+    "fundratio": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fund-analtyics/fundratio",
+      "parameters": [
+        "symbol",
+        "date",
+        "top"
+      ],
+      "gzAvailable": false
+    },
+    "fundsDeepTopAnalysis": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/funds-deep-top-analysis",
+      "parameters": [
+        "period",
+        "fund"
+      ],
+      "gzAvailable": false
+    },
+    "newBusiness": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/new-business-api",
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ],
+      "gzAvailable": false
+    },
+    "userSettings": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/user",
+      "parameters": [
+        "hardwareId",
+        "appCode",
+        "clientType",
+        "clientId"
+      ],
+      "gzAvailable": false
+    },
+    "historicEquities": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/historic-equities",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "top",
+        "agents"
+      ]
+    },
+    "historicEquitiesV2": {
+      "url": "https://apiank.matriksdata.com/dumrul/v2/historic-equities",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "agents"
+      ]
+    },
+    "ratingScore": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/rating-score",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "sector"
+      ]
+    },
+    "fundamentalDashboard": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-dashboard",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "currency",
+        "unadjusted"
+      ]
+    },
+    "brokerPositions": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/broker-positions",
+      "gzAvailable": false,
+      "parameters": [
+        "start",
+        "end",
+        "agent"
+      ]
+    },
+    "pages": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/pages",
+      "gzAvailable": false,
+      "parameters": [
+        "page",
+        "type"
+      ]
+    },
+    "bonds": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/bonds",
+      "gzAvailable": false,
+      "parameters": [
+        "isin"
+      ]
+    },
+    "sessionStats": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/session-stats",
+      "gzAvailable": false,
+      "parameters": [
+        "date",
+        "symbols",
+        "index",
+        "type",
+        "symbolType",
+        "sectorCode"
+      ]
+    },
+    "stockExplorer": {
+      "url": "https://api.matriksdata.com/dumrul/v1/stock-explorer",
+      "gzAvailable": false,
+      "parameters": []
+    },
+    "historicPortfolio": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/historic-portfolio-return",
+      "method": "post",
+      "gzAvailable": false,
+      "parameters": []
+    },
+    "stockTrading": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/stock-trading",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "type"
+      ]
+    },
+    "stockAssetReport": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/stock-asset-report",
+      "gzAvailable": false,
+      "parameters": [
+        "start",
+        "end"
+      ]
+    },
+    "shareBuyback": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/share-buyback",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end",
+        "startbuyback",
+        "endbuyback"
+      ]
+    },
+    "relativeReturn": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/relative-return",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "indexes",
+        "relativeSymbol",
+        "period"
+      ]
+    },
+    "companySales": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/company-sales",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "period"
+      ]
+    },
+    "shortSales": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/short-sales",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ]
+    },
+    "shortSalesAnalyse": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/short-sales/analyse",
+      "gzAvailable": false,
+      "parameters": []
+    },
+    "historicMargin": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/historic-margin",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol"
+      ]
+    },
+    "historicRatio": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/historic-ratio",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ]
+    },
+    "riskometre": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/riskometre",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "period"
+      ]
+    },
+    "fundamentalRatingRanker": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-rating/ranker",
+      "gzAvailable": false,
+      "parameters": [
+        "top",
+        "period",
+        "type"
+      ]
+    },
+    "fundamentalRatingHistoric": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-rating/historic",
+      "gzAvailable": false,
+      "parameters": [
+        "symbol",
+        "start",
+        "end"
+      ]
+    },
+    "fundamentalKey": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-key",
+      "gzAvailable": false,
+      "parameters": [
+        "symbols",
+        "periods",
+        "keys"
+      ]
+    },
+    "fundamentalKeyInfo": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-key",
+      "gzAvailable": false,
+      "parameters": []
+    },
+    "sessionController": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/session-controller",
+      "gzAvailable": false,
+      "parameters": []
+    },
+    "fundsVolume": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/funds-volume",
+      "gzAvailable": false,
+      "parameters": [
+        "kind",
+        "year",
+        "type",
+        "period"
+      ]
+    },
+    "indicators": {
+      "bar/indicators/docs": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/bar/indicators/docs",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "bar/indicators": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/bar/indicators",
+        "parameters": [
+          "start",
+          "end",
+          "symbol",
+          "period",
+          "indicatorName",
+          "divisorSymbol"
+        ],
+        "gzAvailable": false
+      },
+      "derived-bar/indicators": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/tick/derived-bar/indicators",
+        "parameters": [
+          "start",
+          "end",
+          "symbol",
+          "period",
+          "indicatorName",
+          "divisorSymbol"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "brokerOffers": {
+      "offers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/broker-offers",
+        "parameters": [
+          "start",
+          "end",
+          "symbol",
+          "top"
+        ],
+        "gzAvailable": false
+      },
+      "target": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/broker-offers/target",
+        "parameters": [],
+        "gzAvailable": false
+      }
+    },
+    "dataAtlas": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/data-atlas",
+      "gzAvailable": false,
+      "parameters": [
+        "lang",
+        "key",
+        "symbol"
+      ]
+    },
+    "foreignDataAtlas": {
+      "url": "https://apicloudank.matriksdata.com/dumrul/v1/foreign-data-atlas",
+      "parameters": [
+        "lang",
+        "key",
+        "symbol"
+      ],
+      "gzAvailable": false
+    },
+    "robotAnalysis": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/robot-analysis",
+      "parameters": [
+        "symbol",
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "fundamentalRatioReturn": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/fundamental-ratio-return",
+      "parameters": [
+        "symbols",
+        "indexes",
+        "period"
+      ],
+      "gzAvailable": false
+    },
+    "dailyReport": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/daily-report",
+      "gzAvailable": false,
+      "parameters": [
+        "indexes",
+        "start",
+        "end",
+        "report",
+        "grossSwap",
+        "suspended",
+        "marketMaker",
+        "midpoint",
+        "vwap"
+      ]
+    },
+    "investmentCompanyPortfolios": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/investment-company-portfolios",
+      "gzAvailable": false,
+      "parameters": [
+        "start",
+        "end"
+      ]
+    },
+    "spread": {
+      "future": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/spread/future",
+        "gzAvailable": false,
+        "parameters": [
+          "underlying",
+          "future",
+          "spread",
+          "submarketCode",
+          "top"
+        ]
+      }
+    },
+    "tcmbData": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/tcmb",
+      "gzAvailable": false,
+      "parameters": [
+        "type"
+      ]
+    },
+    "tuikData": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/tuik",
+      "gzAvailable": false,
+      "parameters": [
+        "search",
+        "start",
+        "end"
+      ]
+    },
+    "garanModelPortfolio": {
+      "url": "https://apiank.matriksdata.com/dumrul/v1/garan-model-portfolio",
+      "gzAvailable": false,
+      "parameters": [
+        "start",
+        "end"
+      ]
+    },
+    "magnus": {
+      "simulation": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-simulation",
+        "gzAvailable": false,
+        "parameters": [
+          "simulation",
+          "detail"
+        ]
+      },
+      "getPortfolio": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-simulation",
+        "method": "get",
+        "gzAvailable": false,
+        "parameters": [
+          "id"
+        ]
+      },
+      "createPortfolio": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-portfolio",
+        "method": "post",
+        "gzAvailable": false,
+        "parameters": []
+      },
+      "approvePortfolio": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-portfolio/approve",
+        "method": "put",
+        "gzAvailable": false,
+        "parameters": []
+      },
+      "deletePortfolio": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-portfolio",
+        "method": "delete",
+        "gzAvailable": false,
+        "parameters": []
+      },
+      "completeTransaction": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-portfolio/complete-transaction",
+        "method": "put",
+        "gzAvailable": false,
+        "parameters": []
+      },
+      "newOptimization": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/magnus-portfolio/new-optimization",
+        "method": "put",
+        "gzAvailable": false,
+        "parameters": []
+      }
+    },
+    "socialMedia": {
+      "dailyReport": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/daily-report",
+        "parameters": [
+          "disableAttachment"
+        ],
+        "gzAvailable": false
+      },
+      "weeklyReport": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/weekly-report",
+        "parameters": [
+          "disableAttachment"
+        ],
+        "gzAvailable": false
+      },
+      "monthlyReport": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/monthly-report",
+        "parameters": [
+          "disableAttachment"
+        ],
+        "gzAvailable": false
+      },
+      "yearlyReport": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/yearly-report",
+        "parameters": [
+          "disableAttachment",
+          "quarter"
+        ],
+        "gzAvailable": false
+      },
+      "weeklyCompare": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/weekly-compare",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "dividends": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/dividends",
+        "parameters": [
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "powerRanker": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/power-ranker",
+        "parameters": [
+          "indexes",
+          "sectorCode",
+          "period",
+          "volume",
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "powerRankerV2": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/power-ranker-v2",
+        "parameters": [
+          "indexes",
+          "sectorCode",
+          "period",
+          "type",
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "indexWeight": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/index-weight",
+        "parameters": [
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "indexWeightV2": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/index-weight-v2",
+        "parameters": [
+          "indexes",
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "weeklyFunds": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/weekly-funds",
+        "parameters": [
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "weeklyFundsV2": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/weekly-funds-v2",
+        "parameters": [
+          "issuer",
+          "type"
+        ],
+        "gzAvailable": false
+      },
+      "bist100": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/bist100",
+        "parameters": [
+          "type"
+        ],
+        "gzAvailable": false
+      },
+      "publicOffering": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/public-offering",
+        "parameters": [
+          "type",
+          "symbol"
+        ],
+        "gzAvailable": false
+      },
+      "borsadirektDividend": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/borsadirekt-dividend",
+        "parameters": [
+          "declared",
+          "indefinitedate",
+          "pastdividend",
+          "symbol",
+          "expecteddividend",
+          "dividendfiltering",
+          "indexCode",
+          "month"
+        ],
+        "gzAvailable": false
+      },
+      "borsadirektCompany": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/borsadirekt-company",
+        "parameters": [
+          "growth",
+          "kztable",
+          "fundamental",
+          "companycard",
+          "valuation",
+          "operation",
+          "ratio",
+          "period",
+          "symbol"
+        ],
+        "gzAvailable": false
+      },
+      "fundValue": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/fundvalue",
+        "parameters": [
+          "kind",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "fundGainers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/fundgainers",
+        "parameters": [
+          "kind",
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "shortSales": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/short-sales",
+        "parameters": [
+          "period",
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "brokerOffers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/broker-offers",
+        "parameters": [
+          "start",
+          "end",
+          "priceTarget",
+          "issuer"
+        ],
+        "gzAvailable": false
+      },
+      "shareBuyback": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/share-buyback",
+        "parameters": [
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "newBusiness": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/new-business",
+        "parameters": [
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "monthlyForeignTrades": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/monthly-foreign-trades",
+        "parameters": [
+          "period"
+        ],
+        "gzAvailable": false
+      },
+      "fundsAssets": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/funds-assets",
+        "parameters": [
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "ratingScore": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/rating-score",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "growthScore": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/growth-score",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "foreignAssetsTop": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/foreign-assets/top",
+        "parameters": [],
+        "gzAvailable": false
+      },
+      "foreignAssetsGainers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/foreign-assets/gainers",
+        "parameters": [
+          "start",
+          "end"
+        ],
+        "gzAvailable": false
+      },
+      "incomeTable": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/social-media/income-table",
+        "parameters": [
+          "symbol"
+        ],
+        "gzAvailable": false
+      }
+    },
+    "minTick": {
+      "brokers": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/min-tick/brokers",
+        "parameters": [
+          "startSeconds",
+          "endSeconds",
+          "symbolType",
+          "top",
+          "dividend"
+        ],
+        "gzAvailable": false
+      },
+      "brokerTradingVolume": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/min-tick/broker-trading-volume",
+        "parameters": [
+          "startSeconds",
+          "endSeconds",
+          "symbolList",
+          "calculationFor",
+          "top"
+        ],
+        "gzAvailable": false
+      },
+      "brokerTradingVolumeIndicator": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/min-tick/broker-trading-volume/indicator",
+        "parameters": [
+          "startSeconds",
+          "endSeconds",
+          "symbolList",
+          "symbol",
+          "agents"
+        ],
+        "gzAvailable": false
+      },
+      "akdByAgent": {
+        "url": "https://apiank.matriksdata.com/dumrul/v1/min-tick/akd-by-agent",
+        "parameters": [
+          "startSeconds",
+          "endSeconds",
+          "agent",
+          "symbolType",
+          "top",
+          "dividend"
+        ],
+        "gzAvailable": false
+      }
+    }
+  },
+  "mqtt": {
+    "mx/news": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/news",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/news",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/news",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34552",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@comment": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/news",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/news",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/news",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34552",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@kap": {
+      "qos": {
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@aa": {
+      "qos": {
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@ai": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/news",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/news",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/news",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34552",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@aicomment": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/news",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/news",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/news",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34552",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@aikap": {
+      "qos": {
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/news@aiaa": {
+      "qos": {
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/iex/symbol": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtstream.radix.matriksdata.com/foreignmarket",
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtstream.radix.matriksdata.com:34459"
+        },
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtstream.radix.matriksdata.com/foreignmarket"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtstream.radix.matriksdata.com/foreignmarket"
+        }
+      }
+    },
+    "mx/iex/trade": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtstream.radix.matriksdata.com/foreigntrade",
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtstream.radix.matriksdata.com:34460"
+        },
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtstream.radix.matriksdata.com/foreigntrade"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtstream.radix.matriksdata.com/foreigntrade"
+        }
+      }
+    },
+    "mx/nbbo/symbol": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtstream.radix.matriksdata.com/foreignmarket",
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtstream.radix.matriksdata.com:34459"
+        },
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtstream.radix.matriksdata.com/foreignmarket"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtstream.radix.matriksdata.com/foreignmarket"
+        }
+      }
+    },
+    "mx/symbol": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/market",
+        "rt": "wss://rtank.radix.matriksdata.com:443/market",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/market",
+          "rt": "ws://rtank.radix.matriksdata.com/market"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/market",
+          "rt": "wss://rtank.radix.matriksdata.com:443/market"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34551",
+          "rt": "tcp://rtank.radix.matriksdata.com:34451"
+        }
+      }
+    },
+    "mx/derivative": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/market",
+        "rt": "wss://rtank.radix.matriksdata.com:443/market",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/market",
+          "rt": "ws://rtank.radix.matriksdata.com/market"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/market",
+          "rt": "wss://rtank.radix.matriksdata.com:443/market"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34551",
+          "rt": "tcp://rtank.radix.matriksdata.com:34451"
+        }
+      }
+    },
+    "mx/fundratio": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/market",
+        "rt": "wss://rtank.radix.matriksdata.com:443/market",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/market",
+          "rt": "ws://rtank.radix.matriksdata.com/market"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/market",
+          "rt": "wss://rtank.radix.matriksdata.com:443/market"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34551",
+          "rt": "tcp://rtank.radix.matriksdata.com:34451"
+        }
+      }
+    },
+    "mx/ratingscore": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/market",
+        "rt": "wss://rtank.radix.matriksdata.com:443/market",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/market",
+          "rt": "ws://rtank.radix.matriksdata.com/market"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/market",
+          "rt": "wss://rtank.radix.matriksdata.com:443/market"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34551",
+          "rt": "tcp://rtank.radix.matriksdata.com:34451"
+        }
+      }
+    },
+    "mx/stats/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/high/weekly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/high/monthly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/high/yearly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/low/weekly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/low/monthly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/low/yearly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/volume/weekly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/volume/monthly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/volume/yearly": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/warrant/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/db/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/db/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/db/warrant/quantity": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/warrant/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/akm/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/akm/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/akm/warrant/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/garan/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/garan/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/garan/warrant/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/iyf/warrant/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/iyf/warrant/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/iyf/warrant/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/future/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/future/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/future/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/future/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/future/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/osm/future/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/gdk/future/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/gdk/future/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/gdk/future/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/option/high": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/option/low": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/stats/option/volume": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+        "rt": "wss://rtank.radix.matriksdata.com/stats",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/stats",
+          "rt": "ws://rtank.radix.matriksdata.com/stats"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/stats",
+          "rt": "wss://rtank.radix.matriksdata.com/stats"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34553",
+          "rt": "tcp://rtank.radix.matriksdata.com:34453"
+        }
+      }
+    },
+    "mx/trade": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/trade",
+        "rt": "wss://rtank.radix.matriksdata.com/trade",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/trade",
+          "rt": "ws://rtank.radix.matriksdata.com/trade"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/trade",
+          "rt": "wss://rtank.radix.matriksdata.com/trade"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34554",
+          "rt": "tcp://rtank.radix.matriksdata.com:34454"
+        }
+      }
+    },
+    "mx/pgc": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/trade",
+        "rt": "wss://rtank.radix.matriksdata.com/trade",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/trade",
+          "rt": "ws://rtank.radix.matriksdata.com/trade"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/trade",
+          "rt": "wss://rtank.radix.matriksdata.com/trade"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34554",
+          "rt": "tcp://rtank.radix.matriksdata.com:34454"
+        }
+      }
+    },
+    "mx/depth": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+        "rt": "wss://rtank.radix.matriksdata.com/depth",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/depth",
+          "rt": "ws://rtank.radix.matriksdata.com/depth"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+          "rt": "wss://rtank.radix.matriksdata.com/depth"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34555",
+          "rt": "tcp://rtank.radix.matriksdata.com:34455"
+        }
+      }
+    },
+    "mx/depthstats": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+        "rt": "wss://rtank.radix.matriksdata.com/depth",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/depth",
+          "rt": "ws://rtank.radix.matriksdata.com/depth"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+          "rt": "wss://rtank.radix.matriksdata.com/depth"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34555",
+          "rt": "tcp://rtank.radix.matriksdata.com:34455"
+        }
+      }
+    },
+    "mx/booklet": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+        "rt": "wss://rtank.radix.matriksdata.com/depth",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/depth",
+          "rt": "ws://rtank.radix.matriksdata.com/depth"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/depth",
+          "rt": "wss://rtank.radix.matriksdata.com/depth"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34555",
+          "rt": "tcp://rtank.radix.matriksdata.com:34455"
+        }
+      }
+    },
+    "mx/analytics/option": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+        "rt": "wss://rtank.radix.matriksdata.com/analytics",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/analytics",
+          "rt": "ws://rtank.radix.matriksdata.com/analytics"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+          "rt": "wss://rtank.radix.matriksdata.com/analytics"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34556",
+          "rt": "tcp://rtank.radix.matriksdata.com:34456"
+        }
+      }
+    },
+    "mx/analytics/warrant": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+        "rt": "wss://rtank.radix.matriksdata.com/analytics",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/analytics",
+          "rt": "ws://rtank.radix.matriksdata.com/analytics"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+          "rt": "wss://rtank.radix.matriksdata.com/analytics"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34556",
+          "rt": "tcp://rtank.radix.matriksdata.com:34456"
+        }
+      }
+    },
+    "mx/analytics/db/warrant": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+        "rt": "wss://rtank.radix.matriksdata.com/analytics",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/analytics",
+          "rt": "ws://rtank.radix.matriksdata.com/analytics"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+          "rt": "wss://rtank.radix.matriksdata.com/analytics"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34556",
+          "rt": "tcp://rtank.radix.matriksdata.com:34456"
+        }
+      }
+    },
+    "mx/analytics/akm/warrant": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+        "rt": "wss://rtank.radix.matriksdata.com/analytics",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/analytics",
+          "rt": "ws://rtank.radix.matriksdata.com/analytics"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+          "rt": "wss://rtank.radix.matriksdata.com/analytics"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34556",
+          "rt": "tcp://rtank.radix.matriksdata.com:34456"
+        }
+      }
+    },
+    "mx/analytics/garan/warrant": {
+      "qos": {
+        "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+        "rt": "wss://rtank.radix.matriksdata.com/analytics",
+        "ws": {
+          "dl": "ws://dlank.radix.matriksdata.com/analytics",
+          "rt": "ws://rtank.radix.matriksdata.com/analytics"
+        },
+        "wss": {
+          "dl": "wss://dlank.radix.matriksdata.com:443/analytics",
+          "rt": "wss://rtank.radix.matriksdata.com/analytics"
+        },
+        "tcp": {
+          "dl": "tcp://dlank.radix.matriksdata.com:34556",
+          "rt": "tcp://rtank.radix.matriksdata.com:34456"
+        }
+      }
+    },
+    "mx/arf": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rt.radix.matriksdata.com/arf",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rt.radix.matriksdata.com/arf"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rt.radix.matriksdata.com/arf"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rt.radix.matriksdata.com:34457"
+        }
+      }
+    },
+    "mx/timestamp": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtank.radix.matriksdata.com:443/market",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtank.radix.matriksdata.com/market"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtank.radix.matriksdata.com:443/market"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34451"
+        }
+      }
+    },
+    "mx/session": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtstream.radix.matriksdata.com:443/session",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtstream.radix.matriksdata.com/session"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtstream.radix.matriksdata.com:443/session"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtstream.radix.matriksdata.com:34458"
+        }
+      }
+    },
+    "mx/event/prime/symbol": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/event/prime/agent": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/event/prime/derivative": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    },
+    "mx/event/prime/index": {
+      "qos": {
+        "dl": "",
+        "rt": "wss://rtank.radix.matriksdata.com/news",
+        "ws": {
+          "dl": "",
+          "rt": "ws://rtank.radix.matriksdata.com/news"
+        },
+        "wss": {
+          "dl": "",
+          "rt": "wss://rtank.radix.matriksdata.com/news"
+        },
+        "tcp": {
+          "dl": "",
+          "rt": "tcp://rtank.radix.matriksdata.com:34452"
+        }
+      }
+    }
+  }
+}

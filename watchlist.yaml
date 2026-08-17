@@ -1,0 +1,152 @@
+# Matriks live watchlist. Edit freely.
+#   indices/fx -> mx/symbol/<C>@lvl2 ; equities -> mx/symbol/<C> ;
+#   futures/options -> mx/derivative/<C>
+# Validate codes against REST metaData.symbols (/dumrul/v4/meta/symbols).
+
+indices:
+  - XU100
+  - XU030
+  - XU050
+  - XU100USD
+  - XBANK
+  - XUSIN
+  - XUTEK
+  - XHOLD
+  - XGIDA
+  - XKMYA
+  - XUMAL
+  - XILTM
+  - XELKT
+  - XUHIZ
+
+fx:
+  - USDTRY
+  - EURTRY
+  - EURUSD
+  - GBPTRY
+  - XAUUSD
+  - GLDGR     # gram gold
+
+equities:
+  - AKBNK
+  - GARAN
+  - ISCTR
+  - YKBNK
+  - VAKBN
+  - HALKB
+  - TSKB
+  - SKBNK
+  - ALBRK
+  - THYAO
+  - PGSUS
+  - TAVHL
+  - ASELS
+  - SISE
+  - EREGL
+  - KRDMD
+  - KCHOL
+  - SAHOL
+  - DOHOL
+  - AGHOL
+  - ENKAI
+  - BIMAS
+  - MGROS
+  - SOKM
+  - MAVI
+  - ULKER
+  - CCOLA
+  - AEFES
+  - TUPRS
+  - PETKM
+  - SASA
+  - HEKTS
+  - GUBRF
+  - TKFEN
+  - ENJSA
+  - ENERY
+  - AKSEN
+  - AKSA
+  - ALARK
+  - ASTOR
+  - SMRTG
+  - CWENE
+  - FROTO
+  - TOASO
+  - OTKAR
+  - DOAS
+  - TTRAK
+  - ARCLK
+  - VESTL
+  - TCELL
+  - TTKOM
+  - TURKCELL
+  - KONTR
+  - KONYA
+  - CIMSA
+  - OYAKC
+  - AKCNS
+  - BTCIM
+  - BRSAN
+  - TMSN
+  - EKGYO
+  - ISGYO
+  - EUPWR
+  - REEDR
+  - MIATK
+  - KOZAL
+  - KOZAA
+  - IPEKE
+  - TTRAK
+  - VESBE
+  - BERA
+  - GESAN
+  - GENIL
+  - KARSN
+  - TOASO
+  - PARSN
+  - ODAS
+  - BIOEN
+  - ZOREN
+  - AYDEM
+  - GWIND
+  - BJKAS
+  - FENER
+  - GSRAY
+  - TSPOR
+  - MPARK
+  - LKMNH
+  - DEVA
+  - SELEC
+  - LOGO
+  - NETAS
+  - INDES
+  - ARDYZ
+  - PAPIL
+  - FONET
+  - SDTTR
+  - ALFAS
+  - QUAGR
+
+futures:
+  - X30YVADE      # BIST30 index future (front)
+  - XU030YVADE
+  - USDYVADE
+  - EURYVADE
+  - GLDYVADE
+  - FGARAN
+  - FAKBNK
+  - FYKBNK
+  - FISCTR
+  - FTHYAO
+  - FKCHOL
+  - FSAHOL
+  - FEREGL
+  - FASELS
+  - FBIMAS
+  - FTUPRS
+  - FSISE
+  - FPGSUS
+  - FFROTO
+
+# options:  # fill from REST optionWarrantTree / filterRankerOptions when needed
+#   - O_X030...

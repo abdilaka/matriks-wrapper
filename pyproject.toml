@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matriks-wrapper"
+version = "0.1.0"
+description = "Client for the Ziraat Yatırım Matriks Web Trader real-time feed (MQTT 3.1 over WebSocket + Protocol Buffers), with remote captcha/OTP login and auto JWT refresh."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Abdil" }]
+keywords = ["bist", "matriks", "mqtt", "protobuf", "market-data", "viop", "trading"]
+
+dependencies = [
+    "websockets>=12",
+    "protobuf>=4",
+    "pyyaml>=6",
+    "requests>=2.31",
+    "playwright>=1.40",
+]
+
+[project.optional-dependencies]
+dev = ["grpcio-tools>=1.60"]     # regenerate proto -> src/matriks_wrapper/proto/matriks_pb2.py
+redis = ["redis>=5"]
+
+[project.scripts]
+matriks-run = "matriks_wrapper.supervisor:main"      # unattended (login + listen + refresh + re-login)
+matriks-login = "matriks_wrapper.login:main"          # one-off remote login
+matriks-listen = "matriks_wrapper.listener:main"      # listener only (no auto re-login)
+matriks-symbols = "matriks_wrapper.symbols:main"      # symbol master sanity check
+
+[project.urls]
+Documentation = "https://github.com/your-org/matriks-wrapper/tree/main/docs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+matriks_wrapper = ["proto/*.py"]

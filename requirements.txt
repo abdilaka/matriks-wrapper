@@ -1,0 +1,7 @@
+websockets>=12
+protobuf>=4
+grpcio-tools>=1.60   # build-time: compile proto/matriks.proto -> src/matriks_pb2.py
+pyyaml>=6
+playwright>=1.40      # remote login (src/login_playwright.py); run `playwright install chromium`
+requests>=2.31        # telegram relay
+# optional (later): redis>=5

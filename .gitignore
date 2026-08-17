@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+.env.local
+session_store.json
+*.secret
+secrets/
+
+# Compiled protobuf (regenerate from proto/matriks.proto)
+src/matriks_pb2.py
+
+# Local tick data
+data/
+*.jsonl
+*.parquet
+
+# Captured live tokens/credentials if any leak into reference dumps
+reference/*token*
+reference/*session*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Transient captured token (local test only)
+.secrets/
+*.local
