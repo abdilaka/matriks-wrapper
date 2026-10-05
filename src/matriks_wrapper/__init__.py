@@ -41,7 +41,8 @@ class MatriksFeed:
     Parameters
     ----------
     watchlist : dict | str | None
-        A dict ``{indices:[...], fx:[...], equities:[...], futures:[...], options:[...]}``, a path
+        A dict ``{indices:[...], fx:[...], equities:[...], futures:[...], options:[...],
+        warrants:[...]}``, a path
         to a ``watchlist.yaml``, or ``None`` to load ``./watchlist.yaml``.
     on_update : callable | None
         Optional ``fn(symbol, root, data)`` invoked on every tick (after the store is updated).
@@ -101,13 +102,18 @@ class MatriksFeed:
 
     def set_watchlist(self, watchlist):
         """Canlı feed'i durdurmadan watchlist'i değiştir; thread-safe (resubscribe planlar).
-        Token korunur, re-login olmaz. `watchlist` dict ya da yaml yolu olabilir."""
+        Yalnız fark (un)subscribe edilir; token ve bağlantı korunur, re-login olmaz.
+        `watchlist` dict ya da yaml yolu olabilir."""
         if self._loop is None:
             self._sup.watchlist = watchlist
             return
         self._loop.call_soon_threadsafe(
             lambda: asyncio.ensure_future(self._sup.resubscribe(watchlist))
         )
+
+    def is_alive(self):
+        """Arka plan feed iş parçacığı çalışıyor mu (ölmüşse gömülü süreç kendini yeniden başlatmalı)."""
+        return self._thread is not None and self._thread.is_alive()
 
     def stop(self, timeout=10):
         """Request a clean stop and join the background thread (if any)."""

@@ -51,7 +51,8 @@ def topics_for(watchlist):
     """Map the watchlist into MQTT topics by instrument class.
 
     Tümü @lvl2 (Karma Düzey 1 lisansı): top-of-book bidSize/askSize + volume/lastQuantity gelir.
-    indices/fx/equities -> mx/symbol/<C>@lvl2 ; futures/options (VIOP) -> mx/derivative/<C>@lvl2.
+    indices/fx/equities -> mx/symbol/<C>@lvl2 ; futures/options (VIOP) ve warrants ->
+    mx/derivative/<C>@lvl2.
     Returns list[(topic, symbol, kind)].
     """
     out = []
@@ -65,6 +66,9 @@ def topics_for(watchlist):
         out.append((f"mx/derivative/{c}@lvl2", c, "future"))
     for c in watchlist.get("options", []) or []:
         out.append((f"mx/derivative/{c}@lvl2", c, "option"))
+    # Varantlar (Matriks sT=V) türev broker'ında: mx/derivative/<C>@lvl2 (topach "V" kuralı)
+    for c in watchlist.get("warrants", []) or []:
+        out.append((f"mx/derivative/{c}@lvl2", c, "warrant"))
     # de-dup preserving order
     seen, uniq = set(), []
     for t in out:
