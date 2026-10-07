@@ -42,7 +42,7 @@ class MatriksFeed:
     ----------
     watchlist : dict | str | None
         A dict ``{indices:[...], fx:[...], equities:[...], futures:[...], options:[...],
-        warrants:[...]}``, a path
+        warrants:[...], structured:[...], certificates:[...]}``, a path
         to a ``watchlist.yaml``, or ``None`` to load ``./watchlist.yaml``.
     on_update : callable | None
         Optional ``fn(symbol, root, data)`` invoked on every tick (after the store is updated).
