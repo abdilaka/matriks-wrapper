@@ -81,3 +81,13 @@ def topics_for(watchlist):
         if t[0] not in seen:
             seen.add(t[0]); uniq.append(t)
     return uniq
+
+
+def delayed_topics_for(watchlist):
+    """Gecikmeli kademedeki (dl broker) konular: list[(topic, symbol, kind)].
+
+    Matriks'in konu kuralları (dumrul/v2/topach) tahvil/repo (meta sT=B: TAHVIL, TAHVIL5Y, TAHVILUV, REPO) için
+    `mx/symbol/%s@lvl2`, qos "dl" veriyor: konu aynı, broker gecikmeli olan (disco'da mx/symbol → dl). Gerçek
+    zamanlı broker'da bu konular SUBACK ile reddediliyor. watchlist anahtarı: "bonds".
+    """
+    return [(f"mx/symbol/{c}@lvl2", c, "structured") for c in dict.fromkeys(watchlist.get("bonds", []) or [])]

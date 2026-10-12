@@ -48,6 +48,7 @@ class Supervisor:
         self.last_healthy = time.time()
         self.last_relogin = 0.0
         self._bmap = None                   # topic-prefix -> broker URL (son başarılı disco)
+        self._dmap = None                   # aynısı gecikmeli kademe (dl) için — config.delayed_topics_for
         self.topic_meta = {}                # topic -> (symbol, kind) — abone↔veri izlemesi için
         self._resub_pending = None          # başarısız watchlist değişikliği (health_tick'te tekrar)
         self._resub_lock = None
@@ -93,6 +94,7 @@ class Supervisor:
             loop = asyncio.get_running_loop()
             disco = await loop.run_in_executor(None, discovery.fetch_disco)
             self._bmap = discovery.broker_map(disco, tier="rt")
+            self._dmap = discovery.broker_map(disco, tier="dl")
         return self._bmap
 
     def _plan(self, wl, bmap):
@@ -102,6 +104,15 @@ class Supervisor:
         unresolved = 0
         for topic, sym, kind in config.topics_for(wl):
             url = discovery.resolve_topic_broker(bmap, topic)
+            if url:
+                by_broker[url].append(topic)
+                meta[topic] = (sym, kind)
+            else:
+                unresolved += 1
+        # Gecikmeli kademedeki konular (topach qos "dl"; ör. tahvil göstergeleri): aynı konu, dl broker'ı —
+        # ayrı WebSocket bağlantısı ama aynı oturum/token (Matriks web terminali de böyle bağlanıyor).
+        for topic, sym, kind in config.delayed_topics_for(wl):
+            url = discovery.resolve_topic_broker(self._dmap or {}, topic)
             if url:
                 by_broker[url].append(topic)
                 meta[topic] = (sym, kind)
